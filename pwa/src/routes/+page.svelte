@@ -4,6 +4,7 @@
   import Form from "../components/Form.svelte";
 
   onMount(() => {
+
     if (browser) {
 
       // clear any local storage
@@ -22,7 +23,7 @@
 
   function syncLocalData() {
     if (localStorage.getItem("data")) {
-      window.alert("Syncing following data:" + localStorage.getItem("data"))
+      console.log("Syncing following data:" + localStorage.getItem("data"))
     }
   }
 
